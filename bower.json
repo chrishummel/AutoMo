@@ -1,0 +1,22 @@
+{
+  "name": "mvpproject",
+  "description": "<!--  > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.",
+  "main": "index.js",
+  "authors": [
+    "Christopher Hummel <chrishummelj@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/chrishummel/ATX-mvp",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3"
+  }
+}

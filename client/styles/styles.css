@@ -1,0 +1,28 @@
+.page-top {
+	background: url('./images/carImage.jpg') no-repeat;
+	background-size: 100%
+}
+
+.small {
+	color: black;
+}
+
+#top-space {
+	height: 400px;
+}
+
+.page-header {
+	margin-top: 300px;
+}
+
+.engine {
+	font-weight: bold;
+}
+
+.compressor {
+	text-transform: capitalize;
+}
+
+.drivetype {
+	text-transform: capitalize;
+}

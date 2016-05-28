@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row text-center">
+	<h3 style="margin-top: auto">Maintenance Schedule</h3>
+	</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-1"></div>
+
+<table class="table table-bordered">
+	<tr>
+		<th class="col-xs-2 text-center"> Mileage</th>
+		<th class="col-xs-2 text-center"> Action</th>
+		<th class="col-xs-2 text-center"> Item</th>
+		<th class="col-xs-6 text-center"> Description</th>
+	</tr>
+	<tr ng-repeat="item in data | orderBy: 'intervalMileage'">
+		<td class="col-xs-2 text-center"> {{item.intervalMileage}}</td>
+		<td class="col-xs-2 text-center"> {{item.action}}</td>
+		<td class="col-xs-2 text-center"> {{item.item}}</td>
+		<td class="col-xs-6 text-center"> {{item.itemDescription}}</td>
+	</tr>
+</table>
+<div class="col-xs-1"></div>
+</div>
+</div>

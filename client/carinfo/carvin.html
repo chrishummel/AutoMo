@@ -1,0 +1,12 @@
+<div class="container">
+	<div id='vinInfo' ng-controller="carVinController" class="text-center">
+		<div>WBABJ6326RJD32876  1HGCM66536A059992</div>
+	  <h2>Enter Vin</h2>
+	  <div class="center-block">
+		  <form name="vincarinfo">
+		    <input type='text' ng-model='vin.vinNum'>
+		    <input class="btn" type="submit" ng-click="getBasicInfo(vin)">	
+		  </form>
+	  </div>
+	</div>
+</div>
