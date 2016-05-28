@@ -5,14 +5,14 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: path.join(__dirname, '../db/shortly_dev.sqlite')
+      filename: path.join(__dirname, '../db/autoMo_dev.sqlite')
     }
   },
 
   test: {
     client: 'sqlite3',
     connection: {
-      filename: path.join(__dirname, '../db/shortly_test.sqlite')
+      filename: path.join(__dirname, '../db/autoMo_test.sqlite')
     }
   },
 

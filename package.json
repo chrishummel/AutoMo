@@ -1,21 +1,21 @@
 {
   "name": "mvpproject",
   "version": "1.0.0",
-  "description": "<!--  > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.",
+  "description": "Vin Lookup",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrishummel/ATX-mvp.git"
+    "url": "git+https://github.com/chrishummel/AutoMo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chrishummel/ATX-mvp/issues"
+    "url": "https://github.com/chrishummel/AutoMo/issues"
   },
-  "homepage": "https://github.com/chrishummel/ATX-mvp#readme",
+  "homepage": "https://github.com/chrishummel/AutoMo#readme",
   "dependencies": {
     "angular": "^1.5.6",
     "angular-route": "^1.5.6",
