@@ -1,15 +1,7 @@
-var path = require('path');
 
-var config = require('./knexfile.js')
-var env = process.env.NODE_ENV || 'development'
-var knex = require('knex')(config[env])
+exports.up = function(knex, Promise) {
 
-module.exports = knex
-
-knex.migrate.latest([config])
-
-/*knex.schema.hasTable('users').then(function(exists) {
-  if (!exists) {
+  return Promise.all([
     knex.schema.createTable('users', function (table) {
       table.increments('id').primary();
       table.string('username', 255);
@@ -17,12 +9,8 @@ knex.migrate.latest([config])
       table.timestamps();
     }).then(function (table) {
       console.log('Created users table.');
-    });
-  }
-});
+    }),
 
-knex.schema.hasTable('cars').then(function(exists) {
-  if (!exists) {
     knex.schema.createTable('cars', function (table) {
       table.increments('id').primary();
       table.string('user_id', 255);
@@ -30,12 +18,8 @@ knex.schema.hasTable('cars').then(function(exists) {
       table.timestamps();
     }).then(function (table) {
       console.log('Created cars table.');
-    });
-  }
-});
+    }),
 
-knex.schema.hasTable('sessions').then(function(exists) {
-  if (!exists) {
     knex.schema.createTable('sessions', function (table) {
       table.increments('id').primary();
       table.integer('user_id')
@@ -43,7 +27,16 @@ knex.schema.hasTable('sessions').then(function(exists) {
       table.timestamps();
     }).then(function (table) {
       console.log('Created sessions table.');
-    });
-  }
-});
-*/
+    })
+  ])
+};
+
+exports.down = function(knex, Promise) {
+  return Promise.all(
+    [
+      knex.schema.dropTable('users'),
+      knex.schema.dropTable('cars'),
+      knex.schema.dropTable('sessions')
+    ]
+  )
+};
